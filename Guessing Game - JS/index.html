@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Welcome To The Guessing Game</h1>
+
+    <section id="begin">
+      <h2>Who will be playing? You or Me?</h2>
+
+      <div class="center">
+        <button class="btn btn-human">Human</button>
+
+        <button class="btn btn-computer">Computer</button>
+      </div>
+    </section>
+
+    <section id="human">
+      <h2>
+        Think of a number between 1 and 100 and I will try and guess it!! :-)
+      </h2>
+
+      <h3 class="computer-guess">I think your number is ???. How did I do?</h3>
+
+      <div class="center">
+        <button class="btn btn-high">Too High!</button>
+
+        <button class="btn btn-low">Too Low!</button>
+
+        <button class="btn btn-correct">Correct!</button>
+      </div>
+    </section>
+
+    <section id="computer">
+      <h2>I have my number! It is between 1 and 100! You have 5 tries!!!</h2>
+      <h3 class="computer-help">You are too high!!!</h3>
+
+      <div class="center" id="check">
+        <input type="number" class="guess" />
+        <button class="btn" id="btn-check">Check Your Answer!</button>
+      </div>
+    </section>
+    <footer><p>Reload the page at anytime to start over!!! :-)</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
